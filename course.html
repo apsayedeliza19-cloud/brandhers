@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Brand Management — BrandHERS</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="course">
+    <div class="app">
+      <!-- ===== SIDEBAR (same on every page) ===== -->
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <a href="index.html" class="brand-logo" aria-label="BrandHERS home"
+            ><img src="assets/logo.png" alt="BrandHERS"
+          /></a>
+        </div>
+        <p class="nav-label">LEARNING</p>
+        <a href="index.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-home.svg" width="19" height="19" alt="" />Home</a
+        >
+        <a href="courses.html" class="nav-link active"
+          ><img class="ic" src="assets/icons/nav-book-active.svg" width="19" height="19" alt="" />Courses</a
+        >
+        <a href="dashboard.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-grid.svg" width="19" height="19" alt="" />My Dashboard</a
+        >
+        <p class="nav-label second">PLATFORM</p>
+        <a href="about.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-info.svg" width="19" height="19" alt="" />About</a
+        >
+        <a href="contact.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-mail.svg" width="19" height="19" alt="" />Contact</a
+        >
+        <div class="sidebar-spacer"></div>
+        <div class="help-card">
+          <p class="t1">Need Help?</p>
+          <p class="t2">Get support for your business</p>
+          <a href="contact.html" class="btn btn-primary">Get Support</a>
+        </div>
+        <!-- Shown only when logged in -->
+        <div class="profile-card" data-when="user" hidden>
+          <a href="profile.html" class="profile-row"
+            ><span class="avatar" data-bind="initial">E</span>
+            <span
+              ><span class="nm" data-bind="userName">Edeliza Apsay</span
+              ><span class="rl" style="display: block">Business Owner</span></span
+            ></a
+          >
+          <button class="btn btn-outline" data-signout style="width: 100%">Sign Out</button>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <div class="main">
+        <!-- ===== TOPBAR (same on every page) ===== -->
+        <header class="topbar" id="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span></button>
+          <label class="search"
+            ><img class="ic" src="assets/icons/search.svg" width="17" height="17" alt="" /><input
+              id="topSearch"
+              placeholder="Search courses, topics..."
+              aria-label="Search courses"
+          /></label>
+          <div class="top-actions">
+            <div class="notif-host" data-when="user" hidden>
+              <button class="icon-btn" id="bellBtn" aria-label="Notifications">
+                <img class="ic bell" src="assets/icons/bell.svg" width="19" height="19" alt="" /><img
+                  class="ic dot"
+                  src="assets/icons/bell-dot.svg"
+                  width="9"
+                  height="9"
+                  alt=""
+                  data-when="unread"
+                  hidden
+                />
+              </button>
+            </div>
+            <a href="dashboard.html" class="dash-badge"
+              ><img class="ic" src="assets/icons/grid-badge.svg" width="14" height="14" alt="" />Dashboard</a
+            >
+            <a href="profile.html" class="user-menu" data-when="user" hidden
+              ><span class="avatar" data-bind="initial">E</span><span class="nm" data-bind="firstName">Edeliza</span></a
+            >
+            <button class="btn btn-primary btn-sm" data-login data-when="guest">Log In</button>
+          </div>
+        </header>
+
+        <!-- ===== PAGE CONTENT ===== -->
+        <main class="content" id="view">
+          <nav class="crumbs bold">
+            <a href="index.html">Home</a
+            ><img class="ic" src="assets/icons/chevron-right.svg" width="13" height="13" alt="" /><a href="courses.html"
+              >Courses</a
+            ><img class="ic" src="assets/icons/chevron-right.svg" width="13" height="13" alt="" /><span class="cur"
+              >Brand Management</span
+            >
+          </nav>
+          <div class="course-hero">
+            <div class="left">
+              <span class="badge">Branding</span>
+              <h1>Brand Management</h1>
+              <p class="lead">
+                Build a strong, consistent brand identity for your MSME. Learn how to define your brand mission and
+                values, create a visual identity, and communicate your story in a way that connects with Filipino
+                customers.
+              </p>
+              <div class="course-meta">
+                <span><img class="ic" src="assets/icons/clock-14.svg" width="14" height="14" alt="" />5 weeks</span
+                ><span><img class="ic" src="assets/icons/book-14.svg" width="14" height="14" alt="" />6 lessons</span>
+              </div>
+              <div class="card outcomes">
+                <h3>What You'll Learn</h3>
+                <div>
+                  <img class="ic" src="assets/icons/check-16.svg" width="16" height="16" alt="" /><span
+                    >Define your brand mission and values</span
+                  >
+                </div>
+                <div>
+                  <img class="ic" src="assets/icons/check-16.svg" width="16" height="16" alt="" /><span
+                    >Create a consistent visual identity</span
+                  >
+                </div>
+                <div>
+                  <img class="ic" src="assets/icons/check-16.svg" width="16" height="16" alt="" /><span
+                    >Craft your brand story for Filipino customers</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="course-img"><img src="assets/module-brand.jpg" alt="" /></div>
+              <div class="progress-head"><span>Your Progress</span><b data-bind="coursePctText">0%</b></div>
+              <div class="track"><i style="width: 0%" data-bind-width="coursePct"></i></div>
+              <p class="progress-note"><span data-bind="lessonsDone">0</span> of 6 lessons complete</p>
+              <button class="btn btn-primary" data-start="" style="width: 100%">Start Module →</button>
+            </div>
+          </div>
+          <section class="section" style="gap: 20px">
+            <div class="lessons-head">
+              <p class="t">Lessons</p>
+              <p class="s">6 lessons · 5 weeks</p>
+            </div>
+            <div class="lessons-card">
+              <button class="lesson-row" data-lesson="1">
+                <span class="lesson-num">1</span>
+                <span class="tx"
+                  ><b>Understanding Your Brand</b><small>8 min<span data-when="notDone"> · Up next</span></small></span
+                >
+                <span class="status" data-status="lesson1">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" /></button
+              ><button class="lesson-row" data-lesson="2">
+                <span class="lesson-num">2</span>
+                <span class="tx"><b>Understanding Your Target Customer</b><small>11 min</small></span>
+                <span class="status">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" /></button
+              ><button class="lesson-row" data-lesson="3">
+                <span class="lesson-num">3</span>
+                <span class="tx"><b>Colors and What They Mean</b><small>9 min</small></span>
+                <span class="status">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" /></button
+              ><button class="lesson-row" data-lesson="4">
+                <span class="lesson-num">4</span>
+                <span class="tx"><b>Creating a Consistent Visual Identity</b><small>13 min</small></span>
+                <span class="status">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" /></button
+              ><button class="lesson-row" data-lesson="5">
+                <span class="lesson-num">5</span>
+                <span class="tx"><b>Crafting Your Brand Story for Filipino Customers</b><small>10 min</small></span>
+                <span class="status">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" /></button
+              ><button class="lesson-row" data-lesson="6">
+                <span class="lesson-num">6</span>
+                <span class="tx"><b>Brand Voice and Messaging</b><small>9 min</small></span>
+                <span class="status">Not started</span>
+                <img class="ic" src="assets/icons/chevron-right-row.svg" width="16" height="16" alt="" />
+              </button>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div id="modal-root"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

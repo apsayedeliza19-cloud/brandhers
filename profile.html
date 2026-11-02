@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Profile — BrandHERS</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="profile">
+    <div class="app">
+      <!-- ===== SIDEBAR (same on every page) ===== -->
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <a href="index.html" class="brand-logo" aria-label="BrandHERS home"
+            ><img src="assets/logo.png" alt="BrandHERS"
+          /></a>
+        </div>
+        <p class="nav-label">LEARNING</p>
+        <a href="index.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-home.svg" width="19" height="19" alt="" />Home</a
+        >
+        <a href="courses.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-book.svg" width="19" height="19" alt="" />Courses</a
+        >
+        <a href="dashboard.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-grid.svg" width="19" height="19" alt="" />My Dashboard</a
+        >
+        <p class="nav-label second">PLATFORM</p>
+        <a href="about.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-info.svg" width="19" height="19" alt="" />About</a
+        >
+        <a href="contact.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-mail.svg" width="19" height="19" alt="" />Contact</a
+        >
+        <div class="sidebar-spacer"></div>
+        <div class="help-card">
+          <p class="t1">Need Help?</p>
+          <p class="t2">Get support for your business</p>
+          <a href="contact.html" class="btn btn-primary">Get Support</a>
+        </div>
+        <!-- Shown only when logged in -->
+        <div class="profile-card" data-when="user" hidden>
+          <a href="profile.html" class="profile-row"
+            ><span class="avatar" data-bind="initial">E</span>
+            <span
+              ><span class="nm" data-bind="userName">Edeliza Apsay</span
+              ><span class="rl" style="display: block">Business Owner</span></span
+            ></a
+          >
+          <button class="btn btn-outline" data-signout style="width: 100%">Sign Out</button>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <div class="main">
+        <!-- ===== TOPBAR (same on every page) ===== -->
+        <header class="topbar" id="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span></button>
+          <label class="search"
+            ><img class="ic" src="assets/icons/search.svg" width="17" height="17" alt="" /><input
+              id="topSearch"
+              placeholder="Search courses, topics..."
+              aria-label="Search courses"
+          /></label>
+          <div class="top-actions">
+            <div class="notif-host" data-when="user" hidden>
+              <button class="icon-btn" id="bellBtn" aria-label="Notifications">
+                <img class="ic bell" src="assets/icons/bell.svg" width="19" height="19" alt="" /><img
+                  class="ic dot"
+                  src="assets/icons/bell-dot.svg"
+                  width="9"
+                  height="9"
+                  alt=""
+                  data-when="unread"
+                  hidden
+                />
+              </button>
+            </div>
+            <a href="dashboard.html" class="dash-badge"
+              ><img class="ic" src="assets/icons/grid-badge.svg" width="14" height="14" alt="" />Dashboard</a
+            >
+            <a href="profile.html" class="user-menu" data-when="user" hidden
+              ><span class="avatar" data-bind="initial">E</span><span class="nm" data-bind="firstName">Edeliza</span></a
+            >
+            <button class="btn btn-primary btn-sm" data-login data-when="guest">Log In</button>
+          </div>
+        </header>
+
+        <!-- ===== PAGE CONTENT ===== -->
+        <main class="content center" id="view">
+          <!-- Your details are filled in by script.js from your saved profile -->
+
+          <div class="title-row" style="width: 100%"><h1>My Profile</h1></div>
+          <div class="profile-header">
+            <div class="banner"></div>
+            <div class="row">
+              <div class="big-avatar" data-bind="initial">E</div>
+              <div class="identity">
+                <h2 data-bind="userName">Edeliza Apsay</h2>
+                <p>Business Owner · <span data-bind="business">Edeliza's Kitchen</span></p>
+                <div class="pchips">
+                  <span><span data-bind="classification">Micro</span> Enterprise</span
+                  ><span data-bind="type">Food &amp; Beverage</span><span>Cagayan de Oro</span>
+                </div>
+              </div>
+              <a href="edit-profile.html" class="btn btn-outline">Edit Profile</a>
+            </div>
+          </div>
+          <div class="p-continue">
+            <span class="ic"
+              ><img class="ic" src="assets/icons/profile-continue.svg" width="26" height="26" alt=""
+            /></span>
+            <div class="tx">
+              <p class="k">CONTINUE LEARNING</p>
+              <p class="t">Brand Management · Lesson 1: Understanding Your Brand</p>
+              <div class="pr">
+                <span class="trk"><i style="width: 0%" data-bind-width="lessonPct"></i></span
+                ><span><span data-bind="lessonPct">0</span>% complete</span>
+              </div>
+            </div>
+            <button class="btn-continue" data-continue="">Continue Lesson →</button>
+          </div>
+          <div class="info-grid">
+            <div class="info-box">
+              <h2>Personal Information</h2>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-name.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Full Name</label>
+                  <div data-bind="userName">Edeliza Apsay</div>
+                </div>
+              </div>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-email.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Email</label>
+                  <div data-bind="email">edeliza.apsay@example.com</div>
+                </div>
+              </div>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-phone.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Contact Number</label>
+                  <div data-bind="phone">0912 345 6789</div>
+                </div>
+              </div>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-address.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Address</label>
+                  <div data-bind="address">Cagayan de Oro City, Misamis Oriental</div>
+                </div>
+              </div>
+            </div>
+            <div class="info-box">
+              <h2>Business Information</h2>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-business.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Business Name</label>
+                  <div data-bind="business">Edeliza's Kitchen</div>
+                </div>
+              </div>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-type.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>Business Type</label>
+                  <div data-bind="type">Food &amp; Beverage</div>
+                </div>
+              </div>
+              <div class="frow">
+                <span class="ic"
+                  ><img class="ic" src="assets/icons/profile-class.svg" width="20" height="20" alt=""
+                /></span>
+                <div>
+                  <label>MSME Classification</label>
+                  <div data-bind="classification">Micro</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="modal-root"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
