@@ -1,0 +1,1025 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lesson 1: Understanding Your Brand — BrandHERS</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="lesson">
+    <div class="app">
+      <!-- ===== SIDEBAR (same on every page) ===== -->
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <a href="index.html" class="brand-logo" aria-label="BrandHERS home"
+            ><img src="assets/logo.png" alt="BrandHERS"
+          /></a>
+        </div>
+        <p class="nav-label">LEARNING</p>
+        <a href="index.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-home.svg" width="19" height="19" alt="" />Home</a
+        >
+        <a href="courses.html" class="nav-link active"
+          ><img class="ic" src="assets/icons/nav-book-active.svg" width="19" height="19" alt="" />Courses</a
+        >
+        <a href="dashboard.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-grid.svg" width="19" height="19" alt="" />My Dashboard</a
+        >
+        <p class="nav-label second">PLATFORM</p>
+        <a href="about.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-info.svg" width="19" height="19" alt="" />About</a
+        >
+        <a href="contact.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-mail.svg" width="19" height="19" alt="" />Contact</a
+        >
+        <div class="sidebar-spacer"></div>
+        <div class="help-card">
+          <p class="t1">Need Help?</p>
+          <p class="t2">Get support for your business</p>
+          <a href="contact.html" class="btn btn-primary">Get Support</a>
+        </div>
+        <!-- Shown only when logged in -->
+        <div class="profile-card" data-when="user" hidden>
+          <a href="profile.html" class="profile-row"
+            ><span class="avatar" data-bind="initial">E</span>
+            <span
+              ><span class="nm" data-bind="userName">Edeliza Apsay</span
+              ><span class="rl" style="display: block">Business Owner</span></span
+            ></a
+          >
+          <button class="btn btn-outline" data-signout style="width: 100%">Sign Out</button>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <div class="main">
+        <!-- ===== TOPBAR (same on every page) ===== -->
+        <header class="topbar" id="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span></button>
+          <label class="search"
+            ><img class="ic" src="assets/icons/search.svg" width="17" height="17" alt="" /><input
+              id="topSearch"
+              placeholder="Search courses, topics..."
+              aria-label="Search courses"
+          /></label>
+          <div class="top-actions">
+            <div class="notif-host" data-when="user" hidden>
+              <button class="icon-btn" id="bellBtn" aria-label="Notifications">
+                <img class="ic bell" src="assets/icons/bell.svg" width="19" height="19" alt="" /><img
+                  class="ic dot"
+                  src="assets/icons/bell-dot.svg"
+                  width="9"
+                  height="9"
+                  alt=""
+                  data-when="unread"
+                  hidden
+                />
+              </button>
+            </div>
+            <a href="dashboard.html" class="dash-badge"
+              ><img class="ic" src="assets/icons/grid-badge.svg" width="14" height="14" alt="" />Dashboard</a
+            >
+            <a href="profile.html" class="user-menu" data-when="user" hidden
+              ><span class="avatar" data-bind="initial">E</span><span class="nm" data-bind="firstName">Edeliza</span></a
+            >
+            <button class="btn btn-primary btn-sm" data-login data-when="guest">Log In</button>
+          </div>
+        </header>
+
+        <!-- ===== PAGE CONTENT ===== -->
+        <main class="content center lesson-page" id="view">
+          <!-- Lesson 1 in English and Bisaya. script.js shows the part from the address (lesson.html?part=p1 | p2 | p3 | p3r) in the language you chose -->
+          <nav class="crumbs lesson-crumbs">
+            <a href="index.html">Home</a
+            ><img class="ic" src="assets/icons/chevron-right.svg" width="13" height="13" alt="" /><a href="courses.html"
+              >Courses</a
+            ><img class="ic" src="assets/icons/chevron-right.svg" width="13" height="13" alt="" /><a href="course.html"
+              >Brand Management</a
+            ><img class="ic" src="assets/icons/chevron-right.svg" width="13" height="13" alt="" /><span
+              class="cur"
+              data-lang="en"
+              hidden
+              >Lesson 1: Understanding Your Brand</span
+            ><span class="cur" data-lang="bi" hidden>Leksyon 1: Pagsabot sa Imong Brand</span>
+          </nav>
+          <div class="lesson-shell">
+            <!-- ========== PART 1 — Start Here (English) ========== -->
+            <div class="lesson-main" data-part="p1" data-lang="en" hidden="">
+              <div class="page-header">
+                <p class="pt">PART 1</p>
+                <h1>Start Here</h1>
+                <p class="ps">Reading · Welcome and Introduction</p>
+              </div>
+
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">READ</span>
+                  <h2>Introduction</h2>
+                </div>
+                <p class="lp lead">Your business already has a brand.</p>
+                <p class="lp">
+                  You may already have a logo, a Facebook page, an Instagram account, packaging, signage, or a business
+                  card.
+                </p>
+                <p class="lp">But your brand is more than these things.</p>
+                <p class="lp">
+                  Think about a business you know. When you hear its name, something probably comes to mind.
+                </p>
+                <p class="lp">Maybe you think:</p>
+                <div class="grid2">
+                  <div class="quote">“Their food is really good.”</div>
+                  <div class="quote">“They are affordable.”</div>
+                  <div class="quote">“Their staff is friendly.”</div>
+                  <div class="quote">“Their products look premium.”</div>
+                  <div class="quote">“They always respond quickly.”</div>
+                </div>
+                <p class="lp b">
+                  Those thoughts and feelings are important because your customers are forming opinions about your
+                  business every time they interact with it.
+                </p>
+              </div>
+              <div class="lcard">
+                <div class="card-head"><span class="ltag">WHAT YOU WILL LEARN</span></div>
+                <p class="lp">
+                  In this lesson, you will learn what a brand really is and why it matters to your business. You will
+                  also look at your own business from your customer's point of view. By the end, you will have a clearer
+                  picture of where your brand is now and where you want it to go.
+                </p>
+                <div class="grid2">
+                  <div class="objective"><span class="ck">✓</span>Explain what a brand is.</div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Understand the difference between a brand, branding, and brand identity.
+                  </div>
+                  <div class="objective"><span class="ck">✓</span>Explain why branding matters to MSMEs.</div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Identify the different ways customers experience your brand.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Describe how customers may currently perceive your business.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Identify one area of your brand that you want to improve.
+                  </div>
+                </div>
+              </div>
+              <div class="callout">
+                <span class="k">LESSON OUTPUT</span><span class="v">My Brand Situation Snapshot</span>
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">UP NEXT</span>
+                  <h2>What Is a Brand?</h2>
+                </div>
+                <div class="row">
+                  <p>Part 2 · Video 1: Your Business Is More Than a Logo (2–3 minutes)</p>
+                  <button class="btn btn-primary" data-next="p2">Next: Part 2 →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Module Overview</a></div>
+            </div>
+
+            <!-- ========== PART 2 — What Is a Brand? (English) ========== -->
+            <div class="lesson-main" data-part="p2" data-lang="en" hidden="">
+              <div class="page-header">
+                <p class="pt">PART 2</p>
+                <h1>What Is a Brand?</h1>
+                <p class="ps">Video · Reading · Quick Check</p>
+              </div>
+
+              <div class="video-block">
+                <div class="player" data-player="">
+                  <video src="assets/videos/Part2_FINAL.mp4" preload="metadata" playsinline=""></video>
+                  <div class="ph" hidden>
+                    Video file not found — add Part2_FINAL.mp4 to assets/videos/
+                  </div>
+                  <div class="controls">
+                    <button class="c-play" data-v="play" aria-label="Play or pause">
+                      <img class="ic" src="assets/icons/video-play.svg" width="20" height="20" alt="" />
+                    </button>
+                    <button class="c-skip" data-v="back" aria-label="Back 10 seconds">
+                      <img class="ic" src="assets/icons/video-back10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <button class="c-skip" data-v="fwd" aria-label="Forward 10 seconds">
+                      <img class="ic" src="assets/icons/video-fwd10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <span class="c-time" data-v="time">0:00 / 0:00</span>
+                    <input
+                      class="c-seek"
+                      data-v="seek"
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="0"
+                      step="1"
+                      aria-label="Seek video"
+                    />
+                    <button class="c-sound" data-v="mute" aria-label="Mute or unmute">
+                      <img class="ic" src="assets/icons/video-sound.svg" width="22" height="22" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="video-cap">
+                  <span class="ltag">WATCH</span><b>Video 1: Your Business Is More Than a Logo</b><span>2–3 min</span>
+                </div>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head">
+                  <span class="ltag">READ</span>
+                  <h2>What Is a Brand?</h2>
+                </div>
+                <p class="lp">A brand is more than your business name, logo, colors, or products.</p>
+                <p class="lp">
+                  A simple way to understand a brand is to think about what people associate with your business.
+                </p>
+                <p class="lp">When customers encounter your business, they form impressions. They may think:</p>
+                <div class="grid2">
+                  <div class="quote">“This business is reliable.”</div>
+                  <div class="quote">“Their products are affordable.”</div>
+                  <div class="quote">“They really care about their customers.”</div>
+                  <div class="quote">“Their products feel premium.”</div>
+                  <div class="quote">“They are difficult to contact.”</div>
+                </div>
+                <p class="lp b">These perceptions become part of your brand.</p>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head"><span class="ltag">THE SIMPLE BRAND JOURNEY</span></div>
+                <div class="journey">
+                  <div class="stp"><span class="num">1</span>Your business does something</div>
+                  <span class="arr">→</span>
+                  <div class="stp"><span class="num">2</span>People experience it</div>
+                  <span class="arr">→</span>
+                  <div class="stp"><span class="num">3</span>They form perceptions</div>
+                  <span class="arr">→</span>
+                  <div class="stp"><span class="num">4</span>Those perceptions become associations with your brand</div>
+                </div>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head">
+                  <span class="ltag">READ</span>
+                  <h2>Your brand can be influenced by:</h2>
+                </div>
+                <div class="grid2">
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your product or
+                    service
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your customer
+                    service
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your communication
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your social media
+                    presence
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your packaging
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your physical store
+                    or online environment
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your response time
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your employees
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Your reputation
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />What customers tell
+                    other people
+                  </div>
+                </div>
+              </div>
+              <div class="callout">
+                <span class="k">KEY IDEA</span
+                ><span class="v"
+                  >Your brand does not exist only in your logo. It exists in the experience people have with your
+                  business.</span
+                >
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">TRY IT</span>
+                  <h2>Quick Check</h2>
+                </div>
+                <div class="row">
+                  <p>Choose the best answer.</p>
+                  <button class="btn btn-primary" data-next="p2c">Start Quick Check →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Module Overview</a></div>
+            </div>
+
+            <!-- ========== PART 3 — Video + Reference Card (English) ========== -->
+            <div class="lesson-main" data-part="p3" data-lang="en" hidden="">
+              <div class="page-header">
+                <p class="pt">PART 3</p>
+                <h1>Your Brand Is More Than Your Logo</h1>
+                <p class="ps">Video · Reference Card · Try It</p>
+              </div>
+
+              <div class="video-block">
+                <div class="player" data-player="">
+                  <video src="assets/videos/Part3_FINAL.mp4" preload="metadata" playsinline=""></video>
+                  <div class="ph" hidden>
+                    Video file not found — add Part3_FINAL.mp4 to assets/videos/
+                  </div>
+                  <div class="controls">
+                    <button class="c-play" data-v="play" aria-label="Play or pause">
+                      <img class="ic" src="assets/icons/video-play.svg" width="20" height="20" alt="" />
+                    </button>
+                    <button class="c-skip" data-v="back" aria-label="Back 10 seconds">
+                      <img class="ic" src="assets/icons/video-back10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <button class="c-skip" data-v="fwd" aria-label="Forward 10 seconds">
+                      <img class="ic" src="assets/icons/video-fwd10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <span class="c-time" data-v="time">0:00 / 0:00</span>
+                    <input
+                      class="c-seek"
+                      data-v="seek"
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="0"
+                      step="1"
+                      aria-label="Seek video"
+                    />
+                    <button class="c-sound" data-v="mute" aria-label="Mute or unmute">
+                      <img class="ic" src="assets/icons/video-sound.svg" width="22" height="22" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="video-cap">
+                  <span class="ltag">WATCH</span><b>Video 2: Brand, Branding, and Brand Identity</b><span>2–3 min</span>
+                </div>
+              </div>
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">REFERENCE CARD</span>
+                  <h2>Brand, Branding, and Brand Identity</h2>
+                </div>
+                <div class="ref">
+                  <div class="hr">
+                    <div class="c1">TERM</div>
+                    <div class="c2">SIMPLE DEFINITION</div>
+                    <div class="c3">EXAMPLE</div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Brand</div>
+                    <div class="c2">What people associate with and perceive about your business.</div>
+                    <div class="c3">Customers see the business as friendly and reliable.</div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Branding</div>
+                    <div class="c2">The intentional work used to shape those perceptions.</div>
+                    <div class="c3">The business trains staff to deliver a consistent experience.</div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Brand Identity</div>
+                    <div class="c2">The elements used to express the brand.</div>
+                    <div class="c3">Logo, colors, typography, imagery, packaging, visual style.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">TRY IT</span>
+                  <h2>Brand, Branding, or Brand Identity?</h2>
+                </div>
+                <div class="row">
+                  <p>Read each statement and select Brand, Branding, or Brand Identity.</p>
+                  <button class="btn btn-primary" data-next="p3t">Start Try It →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Module Overview</a></div>
+            </div>
+
+            <!-- ========== PART 3 — Read: Your Logo Is Not Your Brand (English) ========== -->
+            <div class="lesson-main" data-part="p3r" data-lang="en" hidden="">
+              <div class="page-header">
+                <p class="pt">PART 3</p>
+                <h1>Your Logo Is Not Your Brand</h1>
+                <p class="ps">Reading</p>
+              </div>
+
+              <div class="lcard">
+                <div class="card-head"><span class="ltag">REMEMBER</span></div>
+                <div class="grid2 grid3">
+                  <div class="remember-item">Brand = perception</div>
+                  <div class="remember-item">Branding = intentional action</div>
+                  <div class="remember-item">Brand Identity = expression</div>
+                </div>
+              </div>
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">READ</span>
+                  <h2>Your Logo Is Not Your Brand</h2>
+                </div>
+                <p class="lp">Let's address one of the most common misconceptions about branding:</p>
+                <div class="callout">
+                  <span class="k">COMMON MISCONCEPTION</span><span class="v">“My logo is my brand.”</span>
+                </div>
+                <p class="lp b">Your logo is important. But your logo is not your entire brand.</p>
+                <p class="lp">
+                  Imagine that a customer sees your logo for the first time. They may recognize your business. But what
+                  happens next?
+                </p>
+                <div class="grid2 grid3">
+                  <div class="moment"><span class="ck sm">1</span>They visit your page.</div>
+                  <div class="moment"><span class="ck sm">2</span>They send you a message.</div>
+                  <div class="moment"><span class="ck sm">3</span>They place an order.</div>
+                  <div class="moment"><span class="ck sm">4</span>They receive your product.</div>
+                  <div class="moment"><span class="ck sm">5</span>They use your service.</div>
+                  <div class="moment"><span class="ck sm">6</span>They ask a question.</div>
+                  <div class="moment"><span class="ck sm">7</span>They experience a problem.</div>
+                  <div class="moment"><span class="ck sm">8</span>They contact you again.</div>
+                  <div class="moment"><span class="ck sm">9</span>They tell someone about their experience.</div>
+                </div>
+                <p class="lp b">Every one of these moments can affect what they think about your business.</p>
+              </div>
+              <div class="callout">
+                <span class="k">THE LESSON</span
+                ><span class="v"
+                  >Your visual identity matters, but it works together with everything else your customer
+                  experiences.</span
+                >
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">FINAL QUIZ</span>
+                  <h2>Final Quiz</h2>
+                </div>
+                <div class="row">
+                  <p>Complete the 10-question final quiz for Lesson 1. Passing score: 8/10.</p>
+                  <button class="btn btn-primary" data-next="quiz">Take the Final Quiz →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Module Overview</a></div>
+            </div>
+
+            <!-- ========== PART 1 — Start Here (Bisaya) ========== -->
+            <div class="lesson-main" data-part="p1" data-lang="bi" hidden="">
+              <div class="page-header">
+                <p class="pt">BAHIN 1</p>
+                <h1>Sugdi Dinhi</h1>
+                <p class="ps">Pagbasa · Pasiuna</p>
+              </div>
+
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">BASAHON</span>
+                  <h2>Pasiuna</h2>
+                </div>
+                <p class="lp lead">Ang imong negosyo aduna nay brand.</p>
+                <p class="lp">
+                  Mahimong aduna ka nay logo, Facebook page, Instagram account, packaging, signage, o business card.
+                </p>
+                <p class="lp">Apan ang imong brand labaw pa niining mga butanga.</p>
+                <p class="lp">
+                  Hunahunaa ang usa ka negosyo nga imong nailhan. Kung madungog nimo ang ngalan niini, lagmit adunay
+                  mosantop sa imong hunahuna.
+                </p>
+                <p class="lp">Mahimong maghunahuna ka nga:</p>
+                <div class="grid2">
+                  <div class="quote">“Lami kaayo ang ilang pagkaon.”</div>
+                  <div class="quote">“Barato ra”</div>
+                  <div class="quote">“Mahigalaon ang ilang mga empleyado.”</div>
+                  <div class="quote">“Tan-awon nga de-kalidad ang ilang mga produkto.”</div>
+                  <div class="quote">“Kanunay silang paspas motubag.”</div>
+                </div>
+                <p class="lp b">
+                  Importante kana nga mga hunahuna ug pagbati tungod kay ang imong mga kustomer naghimo og mga opinyon
+                  bahin sa imong negosyo matag higayon nga makig-uban sila niini.
+                </p>
+              </div>
+              <div class="lcard">
+                <div class="card-head"><span class="ltag">MGA BUTANG NGA IMONG MAHIBALOAN</span></div>
+                <p class="lp">
+                  Niining leksyon, mahibaloan nimo kung unsa gayud ang usa ka brand ug nganong importante kini sa imong
+                  negosyo. Tan-awon usab nimo ang imong kaugalingong negosyo gikan sa panglantaw sa imong kustomer.<br />Sa
+                  katapusan, mas klaro na ang imong pagsabot kung asa nahimutang ang imong brand karon ug asa nimo kini
+                  gustong padulngon.
+                </p>
+                <div class="grid2">
+                  <div class="objective"><span class="ck">✓</span>Pagpasabot kung unsa ang brand.</div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Pagsabot sa kalainan tali sa brand, branding, ug brand identity.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Pagpasabot kung nganong importante ang branding alang sa mga MSME.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Pag-ila sa nagkalain-laing paagi nga masinati sa mga kustomer ang imong
+                    brand.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Paghulagway kung giunsa paglantaw sa mga kustomer ang imong negosyo karon.
+                  </div>
+                  <div class="objective">
+                    <span class="ck">✓</span>Pag-ila sa usa ka bahin sa imong brand nga gusto nimong pauswagon.
+                  </div>
+                </div>
+              </div>
+              <div class="callout">
+                <span class="k">RESULTA SA LEKSYON</span><span class="v">Hulagway sa Kahimtang sa Akong Brand</span>
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">SUNOD</span>
+                  <h2>Unsa ang Brand?</h2>
+                </div>
+                <div class="row">
+                  <p>Bahin 2 · Video 1: Ang Imong Negosyo Labaw Pa sa Logo (2–3 ka minuto)</p>
+                  <button class="btn btn-primary" data-next="p2">Sunod: Bahin 2 →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Balik sa Module</a></div>
+            </div>
+
+            <!-- ========== PART 2 — What Is a Brand? (Bisaya) ========== -->
+            <div class="lesson-main" data-part="p2" data-lang="bi" hidden="">
+              <div class="page-header">
+                <p class="pt">BAHIN 2</p>
+                <h1>Unsa ang Brand?</h1>
+                <p class="ps">Video · Pagbasa · Pagsusi</p>
+              </div>
+
+              <div class="video-block">
+                <div class="player" data-player="">
+                  <video src="assets/videos/Part2_FINAL.mp4" preload="metadata" playsinline=""></video>
+                  <div class="ph" hidden>
+                    Video file not found — add Part2_FINAL.mp4 to assets/videos/
+                  </div>
+                  <div class="controls">
+                    <button class="c-play" data-v="play" aria-label="Play or pause">
+                      <img class="ic" src="assets/icons/video-play.svg" width="20" height="20" alt="" />
+                    </button>
+                    <button class="c-skip" data-v="back" aria-label="Back 10 seconds">
+                      <img class="ic" src="assets/icons/video-back10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <button class="c-skip" data-v="fwd" aria-label="Forward 10 seconds">
+                      <img class="ic" src="assets/icons/video-fwd10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <span class="c-time" data-v="time">0:00 / 0:00</span>
+                    <input
+                      class="c-seek"
+                      data-v="seek"
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="0"
+                      step="1"
+                      aria-label="Seek video"
+                    />
+                    <button class="c-sound" data-v="mute" aria-label="Mute or unmute">
+                      <img class="ic" src="assets/icons/video-sound.svg" width="22" height="22" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="video-cap">
+                  <span class="ltag">TAN-AWON</span><b>Video 1: Ang Imong Negosyo Labaw Pa sa Logo</b
+                  ><span>2–3 ka minuto</span>
+                </div>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head">
+                  <span class="ltag">BASAHON</span>
+                  <h2>Unsa ang Brand?</h2>
+                </div>
+                <p class="lp">Ang brand labaw pa sa ngalan sa imong negosyo, logo, mga kolor, o mga produkto.</p>
+                <p class="lp">
+                  Ang usa ka yano nga paagi aron masabtan ang brand mao ang paghunahuna kung unsa ang gilambigit sa mga
+                  tawo sa imong negosyo.
+                </p>
+                <p class="lp">
+                  Kung makasugat ang mga kustomer sa imong negosyo, makahimo sila og mga impresyon. Mahimong maghunahuna
+                  sila og ingon niini:
+                </p>
+                <div class="grid2">
+                  <div class="quote">“Kasaligan kini nga negosyo.”</div>
+                  <div class="quote">“Barato ra ang ilang mga produkto.”</div>
+                  <div class="quote">“Tinuod silang nagpakabana sa ilang mga kustomer.”</div>
+                  <div class="quote">“Morag de-kalidad ang ilang mga produkto.”</div>
+                  <div class="quote">“Lisod silang kontakon.”</div>
+                </div>
+                <p class="lp b">Kining mga panlantaw mahimong kabahin sa imong brand.</p>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head"><span class="ltag">ANG SIMPLE NGA PROSESO SA IMONG BRAND</span></div>
+                <div class="journey">
+                  <div class="stp"><span class="num">1</span>Ang imong negosyo adunay gitanyag</div>
+                  <span class="arr">→</span>
+                  <div class="stp"><span class="num">2</span>Masinati kini sa mga tawo</div>
+                  <span class="arr">→</span>
+                  <div class="stp"><span class="num">3</span>Makahimo sila og mga impresyon</div>
+                  <span class="arr">→</span>
+                  <div class="stp">
+                    <span class="num">4</span>Kining mga impresyon mahimong mga asosasyon nga nalambigit sa imong brand.
+                  </div>
+                </div>
+              </div>
+              <div class="lcard sh">
+                <div class="card-head">
+                  <span class="ltag">BASAHON</span>
+                  <h2>Ang imong brand mahimong maimpluwensyahan sa:</h2>
+                </div>
+                <div class="grid2">
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Imong produkto o
+                    serbisyo
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Pagserbisyo sa
+                    kustomer
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Imong komunikasyon
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Presensya sa social
+                    media
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Imong packaging
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Imong pisikal nga
+                    tindahan o online nga plataporma
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Kapaspason sa imong
+                    pagtubag
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />imong mga empleyado
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />imong reputasyon
+                  </div>
+                  <div class="infl">
+                    <img class="ic" src="assets/icons/bullet-dot.svg" width="7" height="7" alt="" />Ang mga masulti sa
+                    mga kustomer ngadto sa uban
+                  </div>
+                </div>
+              </div>
+              <div class="callout">
+                <span class="k">PANGUNANG IDEYA</span
+                ><span class="v"
+                  >Ang imong brand wala lang dala sa imong logo. Dala kini sa kasinatian sa mga tawo sa imong
+                  negosyo.</span
+                >
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">SULAYI KINI</span>
+                  <h2>Pagsusi</h2>
+                </div>
+                <div class="row">
+                  <p>Pilia ang pinakamaayong tubag.</p>
+                  <button class="btn btn-primary" data-next="p2c">Sugdi ang Pagsusi →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Balik sa Module</a></div>
+            </div>
+
+            <!-- ========== PART 3 — Video + Reference Card (Bisaya) ========== -->
+            <div class="lesson-main" data-part="p3" data-lang="bi" hidden="">
+              <div class="page-header">
+                <p class="pt">BAHIN 3</p>
+                <h1>Ang Imong Brand Labaw Pa sa Imong Logo</h1>
+                <p class="ps">Video · Reference Card · Sulayi Kini</p>
+              </div>
+
+              <div class="video-block">
+                <div class="player" data-player="">
+                  <video src="assets/videos/Part3_FINAL.mp4" preload="metadata" playsinline=""></video>
+                  <div class="ph" hidden>
+                    Video file not found — add Part3_FINAL.mp4 to assets/videos/
+                  </div>
+                  <div class="controls">
+                    <button class="c-play" data-v="play" aria-label="Play or pause">
+                      <img class="ic" src="assets/icons/video-play.svg" width="20" height="20" alt="" />
+                    </button>
+                    <button class="c-skip" data-v="back" aria-label="Back 10 seconds">
+                      <img class="ic" src="assets/icons/video-back10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <button class="c-skip" data-v="fwd" aria-label="Forward 10 seconds">
+                      <img class="ic" src="assets/icons/video-fwd10.svg" width="22" height="22" alt="" />10
+                    </button>
+                    <span class="c-time" data-v="time">0:00 / 0:00</span>
+                    <input
+                      class="c-seek"
+                      data-v="seek"
+                      type="range"
+                      min="0"
+                      max="1000"
+                      value="0"
+                      step="1"
+                      aria-label="Seek video"
+                    />
+                    <button class="c-sound" data-v="mute" aria-label="Mute or unmute">
+                      <img class="ic" src="assets/icons/video-sound.svg" width="22" height="22" alt="" />
+                    </button>
+                  </div>
+                </div>
+                <div class="video-cap">
+                  <span class="ltag">TAN-AWON</span><b>Video 2: Brand, Branding, ug Brand Identity</b
+                  ><span>2–3 ka minuto</span>
+                </div>
+              </div>
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">REFERENCE CARD</span>
+                  <h2>Brand, Branding, ug Brand Identity</h2>
+                </div>
+                <div class="ref">
+                  <div class="hr">
+                    <div class="c1">TERMINO</div>
+                    <div class="c2">SIMPLE NA DESKRIPSIYON</div>
+                    <div class="c3">EXAMPLE</div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Brand</div>
+                    <div class="c2">Ang mga butang nga gilangkit ug gitan-aw sa mga tawo bahin sa imong negosyo.</div>
+                    <div class="c3">Nakita sa mga kustomer ang negosyo nga mahigalaon ug kasaligan.</div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Branding</div>
+                    <div class="c2">Ang tinuyo nga mga lakang aron maporma kanang mga panglantaw.</div>
+                    <div class="c3">
+                      Gibansay sa negosyo ang mga kawani aron makahatag og makanunayon nga kasinatian.
+                    </div>
+                  </div>
+                  <div class="r">
+                    <div class="c1">Brand Identity</div>
+                    <div class="c2">Ang mga elemento nga gigamit aron ipadayag ang brand.</div>
+                    <div class="c3">Logo, mga kolor, typography, mga imahe, packaging, biswal nga estilo.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">SULAYI KINI</span>
+                  <h2>Brand, Branding, or Brand Identity?</h2>
+                </div>
+                <div class="row">
+                  <p>Basaha ang matag pahayag ug pilia ang Brand, Branding, o Brand Identity.</p>
+                  <button class="btn btn-primary" data-next="p3t">Sugdi →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Balik sa Module</a></div>
+            </div>
+
+            <!-- ========== PART 3 — Read: Your Logo Is Not Your Brand (Bisaya) ========== -->
+            <div class="lesson-main" data-part="p3r" data-lang="bi" hidden="">
+              <div class="page-header">
+                <p class="pt">BAHIN 3</p>
+                <h1>Ang imong logo dili mao ang imong brand</h1>
+                <p class="ps">Pagbasa</p>
+              </div>
+
+              <div class="lcard">
+                <div class="card-head"><span class="ltag">HINUMDOMI</span></div>
+                <div class="grid2 grid3">
+                  <div class="remember-item">Brand = panglantaw</div>
+                  <div class="remember-item">Branding = tinuyo nga aksyon</div>
+                  <div class="remember-item">Brand Identity = pagpadayag</div>
+                </div>
+              </div>
+              <div class="lcard">
+                <div class="card-head">
+                  <span class="ltag">BASAHON</span>
+                  <h2>Ang imong logo dili mao ang imong brand</h2>
+                </div>
+                <p class="lp">Hisgotan nato ang usa sa mga kasagarang sayop nga pagsabot bahin sa branding:</p>
+                <div class="callout">
+                  <span class="k">KASAGARANG SAYOP NGA PAGSABOT</span
+                  ><span class="v">“Ang akong logo mao ang akong brand.”</span>
+                </div>
+                <p class="lp b">
+                  Importante ang imong logo. Apan ang imong logo dili mao ang kinatibuk-an sa imong brand.
+                </p>
+                <p class="lp">
+                  Hunahunaa nga nakita sa usa ka kustomer ang imong logo sa unang higayon. Mahimong mailhan nila ang
+                  imong negosyo. Apan unsa may sunod nga mahitabo?
+                </p>
+                <div class="grid2 grid3">
+                  <div class="moment"><span class="ck sm">1</span>Mobisita sila sa imong page.</div>
+                  <div class="moment"><span class="ck sm">2</span>Magpadala sila og mensahe kanimo.</div>
+                  <div class="moment"><span class="ck sm">3</span>Mag-order sila.</div>
+                  <div class="moment"><span class="ck sm">4</span>Madawat nila ang imong produkto.</div>
+                  <div class="moment"><span class="ck sm">5</span>Gamiton nila ang imong serbisyo.</div>
+                  <div class="moment"><span class="ck sm">6</span>Mangutana sila.</div>
+                  <div class="moment"><span class="ck sm">7</span>Makasinati sila og problema.</div>
+                  <div class="moment"><span class="ck sm">8</span>Kontakon ka nila pag-usab.</div>
+                  <div class="moment"><span class="ck sm">9</span>Isulti nila sa uban ang ilang kasinatian.</div>
+                </div>
+                <p class="lp b">
+                  Ang matag usa niini nga mga higayon mahimong makaapekto sa ilang panglantaw sa imong negosyo.
+                </p>
+              </div>
+              <div class="callout">
+                <span class="k">ANG LEKSYON</span
+                ><span class="v"
+                  >Importante ang imong biswal nga identidad, apan naglihok kini uban sa tanan nga nasinati sa imong
+                  kustomer.</span
+                >
+              </div>
+              <div class="cta-card">
+                <div class="card-head">
+                  <span class="ltag">KATAPUSANG PAGSULAY</span>
+                  <h2>Katapusang Pagsulay</h2>
+                </div>
+                <div class="row">
+                  <p>Tubaga ang 10 ka pangutana sa katapusang pagsulay sa Leksyon 1. Ang pasar nga iskor: 8/10.</p>
+                  <button class="btn btn-primary" data-next="quiz">Sugdi ang Katapusang Pagsulay →</button>
+                </div>
+              </div>
+              <div class="lesson-nav"><a href="course.html" class="btn btn-ghost">← Balik sa Module</a></div>
+            </div>
+
+            <!-- ========== LESSON OUTLINE (English) ========== -->
+            <aside class="lesson-side" data-lang="en" aria-label="Lesson outline" hidden="">
+              <div>
+                <p class="ol-k">LESSON 1</p>
+                <p class="ol-t">Understanding Your Brand</p>
+                <div class="ol-track"><i style="width: 0%" data-bind-width="lessonPct"></i></div>
+                <p class="ol-pct"><span data-bind="lessonPct">0</span>% complete</p>
+              </div>
+              <div class="divider"></div>
+              <div class="parts">
+                <div class="part">
+                  <a href="lesson.html?part=p1" class="part-h" data-part-n="1"
+                    ><span class="pnum">1</span><span class="pt">Start Here</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p1" class="oitem" data-step="p1">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/file-text-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Start Here</b><small>Reading</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <a href="lesson.html?part=p2" class="part-h" data-part-n="2"
+                    ><span class="pnum">2</span><span class="pt">What Is a Brand?</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p2" class="oitem" data-step="p2">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/play-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>What Is a Brand?</b><small>Video · 2–3 min</small></span></a
+                    ><a href="quiz.html?kind=p2c" class="oitem" data-step="p2c">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Quick Check</b><small>Practice</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <a href="lesson.html?part=p3" class="part-h" data-part-n="3"
+                    ><span class="pnum">3</span><span class="pt">Your Brand Is More Than Your Logo</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p3" class="oitem" data-step="p3">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/play-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Your Brand Is More Than Your Logo</b><small>Video · 2–3 min</small></span></a
+                    ><a href="quiz.html?kind=p3t" class="oitem" data-step="p3t">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Try It</b><small>Practice</small></span></a
+                    ><a href="lesson.html?part=p3r" class="oitem" data-step="p3r">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/file-text-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Read</b><small>Reading</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="part-h soon">
+                    <span class="pnum off">4</span
+                    ><span
+                      ><span class="pt">Every Customer Interaction Shapes Your Brand</span
+                      ><small>Coming soon</small></span
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="part-h soon">
+                    <span class="pnum off">5</span
+                    ><span><span class="pt">Discover Your Brand</span><small>Coming soon</small></span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <a href="quiz.html?kind=final" class="oitem final" data-step="quiz"
+                ><span class="ib"
+                  ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                ><span><b>Final Quiz</b><small>Quiz</small></span></a
+              >
+            </aside>
+            <!-- ========== LESSON OUTLINE (Bisaya) ========== -->
+            <aside class="lesson-side" data-lang="bi" aria-label="Lesson outline (Bisaya)" hidden="">
+              <div>
+                <p class="ol-k">LEKSYON 1</p>
+                <p class="ol-t">Pagsabot sa Imong Brand</p>
+                <div class="ol-track"><i style="width: 0%" data-bind-width="lessonPct"></i></div>
+                <p class="ol-pct"><span data-bind="lessonPct">0</span>% nahuman</p>
+              </div>
+              <div class="divider"></div>
+              <div class="parts">
+                <div class="part">
+                  <a href="lesson.html?part=p1" class="part-h" data-part-n="1"
+                    ><span class="pnum">1</span><span class="pt">Sugdi Dinhi</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p1" class="oitem" data-step="p1">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/file-text-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Sugdi Dinhi</b><small>Pagbasa</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <a href="lesson.html?part=p2" class="part-h" data-part-n="2"
+                    ><span class="pnum">2</span><span class="pt">Unsa ang Brand?</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p2" class="oitem" data-step="p2">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/play-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Unsa ang Brand?</b><small>Video · 2–3 ka minuto</small></span></a
+                    ><a href="quiz.html?kind=p2c" class="oitem" data-step="p2c">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Pagsusi</b><small>Pagsulay</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <a href="lesson.html?part=p3" class="part-h" data-part-n="3"
+                    ><span class="pnum">3</span><span class="pt">Ang Imong Brand Labaw Pa sa Imong Logo</span></a
+                  >
+                  <div class="items">
+                    <a href="lesson.html?part=p3" class="oitem" data-step="p3">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/play-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Ang Imong Brand Labaw Pa sa Imong Logo</b><small>Video · 2–3 ka minuto</small></span></a
+                    ><a href="quiz.html?kind=p3t" class="oitem" data-step="p3t">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Sulayi Kini</b><small>Pagsulay</small></span></a
+                    ><a href="lesson.html?part=p3r" class="oitem" data-step="p3r">
+                      <span class="ib"
+                        ><img class="ic" src="assets/icons/file-text-16.svg" width="16" height="16" alt="" /></span
+                      ><span><b>Basahon</b><small>Pagbasa</small></span></a
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="part-h soon">
+                    <span class="pnum off">4</span
+                    ><span
+                      ><span class="pt">Every Customer Interaction Shapes Your Brand</span
+                      ><small>Moabot pa</small></span
+                    >
+                  </div>
+                </div>
+                <div class="part">
+                  <div class="part-h soon">
+                    <span class="pnum off">5</span
+                    ><span><span class="pt">Discover Your Brand</span><small>Moabot pa</small></span>
+                  </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <a href="quiz.html?kind=final" class="oitem final" data-step="quiz"
+                ><span class="ib"
+                  ><img class="ic" src="assets/icons/help-circle.svg" width="16" height="16" alt="" /></span
+                ><span><b>Katapusang Pagsulay</b><small>Quiz</small></span></a
+              >
+            </aside>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div id="modal-root"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

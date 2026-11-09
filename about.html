@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — BrandHERS</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="about">
+    <div class="app">
+      <!-- ===== SIDEBAR (same on every page) ===== -->
+      <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+        <div class="logo-wrap">
+          <a href="index.html" class="brand-logo" aria-label="BrandHERS home"
+            ><img src="assets/logo.png" alt="BrandHERS"
+          /></a>
+        </div>
+        <p class="nav-label">LEARNING</p>
+        <a href="index.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-home.svg" width="19" height="19" alt="" />Home</a
+        >
+        <a href="courses.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-book.svg" width="19" height="19" alt="" />Courses</a
+        >
+        <a href="dashboard.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-grid.svg" width="19" height="19" alt="" />My Dashboard</a
+        >
+        <p class="nav-label second">PLATFORM</p>
+        <a href="about.html" class="nav-link active"
+          ><img class="ic" src="assets/icons/nav-info-active.svg" width="19" height="19" alt="" />About</a
+        >
+        <a href="contact.html" class="nav-link"
+          ><img class="ic" src="assets/icons/nav-mail.svg" width="19" height="19" alt="" />Contact</a
+        >
+        <div class="sidebar-spacer"></div>
+        <div class="help-card">
+          <p class="t1">Need Help?</p>
+          <p class="t2">Get support for your business</p>
+          <a href="contact.html" class="btn btn-primary">Get Support</a>
+        </div>
+        <!-- Shown only when logged in -->
+        <div class="profile-card" data-when="user" hidden>
+          <a href="profile.html" class="profile-row"
+            ><span class="avatar" data-bind="initial">E</span>
+            <span
+              ><span class="nm" data-bind="userName">Edeliza Apsay</span
+              ><span class="rl" style="display: block">Business Owner</span></span
+            ></a
+          >
+          <button class="btn btn-outline" data-signout style="width: 100%">Sign Out</button>
+        </div>
+      </aside>
+      <div class="scrim" id="scrim"></div>
+
+      <div class="main">
+        <!-- ===== TOPBAR (same on every page) ===== -->
+        <header class="topbar" id="topbar">
+          <button class="menu-btn" id="menuBtn" aria-label="Open menu"><span></span></button>
+          <label class="search"
+            ><img class="ic" src="assets/icons/search.svg" width="17" height="17" alt="" /><input
+              id="topSearch"
+              placeholder="Search courses, topics..."
+              aria-label="Search courses"
+          /></label>
+          <div class="top-actions">
+            <div class="notif-host" data-when="user" hidden>
+              <button class="icon-btn" id="bellBtn" aria-label="Notifications">
+                <img class="ic bell" src="assets/icons/bell.svg" width="19" height="19" alt="" /><img
+                  class="ic dot"
+                  src="assets/icons/bell-dot.svg"
+                  width="9"
+                  height="9"
+                  alt=""
+                  data-when="unread"
+                  hidden
+                />
+              </button>
+            </div>
+            <a href="dashboard.html" class="dash-badge"
+              ><img class="ic" src="assets/icons/grid-badge.svg" width="14" height="14" alt="" />Dashboard</a
+            >
+            <a href="profile.html" class="user-menu" data-when="user" hidden
+              ><span class="avatar" data-bind="initial">E</span><span class="nm" data-bind="firstName">Edeliza</span></a
+            >
+            <button class="btn btn-primary btn-sm" data-login data-when="guest">Log In</button>
+          </div>
+        </header>
+
+        <!-- ===== PAGE CONTENT ===== -->
+        <main class="content" id="view">
+          <div class="header-block">
+            <span class="badge">About BrandHERS</span>
+            <h1>Empowering Women-Led MSMEs</h1>
+            <p>
+              BrandHERS is an extension project of the Department of Technology Communication Management, College of
+              Information Technology and Computing (CITC), USTP, in partnership with ORO-TIPC and DTI Misamis Oriental.
+              It equips women entrepreneurs in Cagayan de Oro with hands-on skills in visual and video marketing.
+            </p>
+          </div>
+          <div class="mission-grid">
+            <div class="image-card">
+              <video src="assets/videos/BrandHers_About_Video.mp4" autoplay muted loop playsinline></video>
+            </div>
+            <div class="card mission-card">
+              <h2>Our Mission</h2>
+              <p class="p">
+                To empower women-led micro, small, and medium enterprises (MSMEs) in Cagayan de Oro by enhancing their
+                digital marketing capabilities through hands-on training in cost-effective multimedia tools.
+              </p>
+              <div class="mission-list">
+                <div>
+                  <img class="ic" src="assets/icons/check-about.svg" width="17" height="17" alt="" />Practical training
+                  in Canva and CapCut
+                </div>
+                <div>
+                  <img class="ic" src="assets/icons/check-about.svg" width="17" height="17" alt="" />Branding and visual
+                  identity for your business
+                </div>
+                <div>
+                  <img class="ic" src="assets/icons/check-about.svg" width="17" height="17" alt="" />A 7-day multimedia
+                  marketing campaign plan
+                </div>
+                <div>
+                  <img class="ic" src="assets/icons/check-about.svg" width="17" height="17" alt="" />A supportive and
+                  inclusive learning environment
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="stats-row about">
+            <div class="stat-box"><b>2-Day</b><span>Hands-on Training</span></div>
+            <div class="stat-box"><b>2</b><span>Free Tools: Canva &amp; CapCut</span></div>
+            <div class="stat-box"><b>7-Day</b><span>Campaign Plan</span></div>
+            <div class="stat-box"><b>SDG 5, 8, 9</b><span>UN Goals Supported</span></div>
+          </div>
+          <section class="cta-section">
+            <h2>Want to be part of BrandHERS?</h2>
+            <p>Start learning today or reach out if you have questions about the program.</p>
+            <div class="cta-row">
+              <a href="courses.html" class="btn btn-primary">Browse Modules</a
+              ><a href="contact.html" class="btn btn-outline">Contact Us</a>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+    <div id="modal-root"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
